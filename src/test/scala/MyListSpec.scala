@@ -1,4 +1,5 @@
 import org.scalatest.{FunSpec, Matchers}
+import org.scalatest.te
 
 class MyListSpec extends FunSpec with Matchers {
 

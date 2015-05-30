@@ -4,7 +4,7 @@ var fs = require('fs');
 var glob = require('glob');
 var vm = require('vm');
 
-var files = glob.sync('./target/*/*-opt.js');
+var files = glob.sync('./target/*/*opt.js');
 if (files.length === 0) {
   throw new Error('Not found script.');
 }
