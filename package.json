@@ -4,6 +4,7 @@
   "description": "This is a barebone example of an application written in [Scala.js](https://www.scala-js.org/).",
   "main": "index.js",
   "dependencies": {
+    "glob": "^5.0.10",
     "sbt-bin": "^0.0.0"
   },
   "devDependencies": {
@@ -12,7 +13,8 @@
   },
   "scripts": {
     "test": "sbt test",
-    "build": "sbt fastOptJS"
+    "build": "sbt fullOptJS",
+    "clean": "sbt clean"
   },
   "author": "",
   "license": "MIT"

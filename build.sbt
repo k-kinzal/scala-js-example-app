@@ -1,19 +1,8 @@
 // Turn this project into a Scala.js project by importing these settings
 enablePlugins(ScalaJSPlugin)
 
-name := "Example"
-
-version := "0.1-SNAPSHOT"
-
 scalaVersion := "2.11.6"
 
-persistLauncher in Compile := true
+scalacOptions ++= Seq("-encoding", "UTF-8", "-feature", "-unchecked", "-deprecation")
 
-persistLauncher in Test := false
-
-testFrameworks += new TestFramework("utest.runner.Framework")
-
-libraryDependencies ++= Seq(
-    "org.scala-js" %%% "scalajs-dom" % "0.8.0",
-    "com.lihaoyi" %%% "utest" % "0.3.0" % "test"
-)
+libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
